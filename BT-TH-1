@@ -31,14 +31,12 @@ int tong(int A[], int n)
         return 0;
     }
     int S = tong(A, n-1);
-    if (A[n] % 2 == 0)
+    if (A[n-1] % 2 == 0)
     { 
-        return A[n] + tong(A, n-1);
+        S = S + A[n-1];
+        return S;
     }
-    else
-    {
-        return tong(A, n-1) + A[n];
-    }
+    
 }
 int main()
 {
@@ -54,6 +52,7 @@ int main()
 		}
 	} while (n < 0);
 	nhapmang(A,n);
-	cout<<"tong la: "<<tong(A, n-1);
+	tong(A,n);
+	cout<<"tong la: "<<tong(A, n-1) + A[n];
 	return 0;
 }
