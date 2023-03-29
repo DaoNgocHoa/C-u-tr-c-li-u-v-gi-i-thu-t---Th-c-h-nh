@@ -33,7 +33,7 @@ int tong(int A[], int n)
     int S = tong(A, n-1);
     if (A[n-1] % 2 == 0)
     { 
-        S = S + A[n-1];
+        S = S + A[n];
         return S;
     }
     
