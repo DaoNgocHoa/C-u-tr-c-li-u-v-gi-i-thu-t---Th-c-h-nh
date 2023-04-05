@@ -1,3 +1,4 @@
+//https://freetuts.net/thuat-toan-tim-kiem-tuyen-tinh-2630.html
 #include <iostream>
 
 using namespace std;
